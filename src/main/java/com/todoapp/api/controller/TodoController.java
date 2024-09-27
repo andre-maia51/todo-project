@@ -5,6 +5,7 @@ import com.todoapp.api.domain.todo.TodoDTO;
 import com.todoapp.api.domain.todo.TodoDetailedDTO;
 import com.todoapp.api.domain.todo.TodoRepository;
 import com.todoapp.api.infra.exceptions.TodoNotFoundException;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/todos")
+@SecurityRequirement(name = "bearer-key")
 public class TodoController {
     @Autowired
     private TodoRepository todoRepository;
