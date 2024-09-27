@@ -19,7 +19,7 @@ Para rodar o projeto localmente, siga os passos abaixo:
 
 1. Clone o repositório:
     ```bash
-    https://github.com/andre-maia51/todo-project.git
+    git clone https://github.com/andre-maia51/todo-project.git
     ```
 
 2. Certifique-se de ter o **PostgreSQL** instalado e crie um banco de dados:
